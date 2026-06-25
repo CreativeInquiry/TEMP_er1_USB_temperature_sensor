@@ -2,7 +2,7 @@
 
 ![TEMPer1 USB temperature sensor](images/temper1_sensor.jpg)
 
-This project reads an inexpensive **TEMPer1/TEMP_er1 USB temperature sensor** on macOS,
+This project reads an inexpensive **TEMP_er1 USB temperature sensor** on macOS,
 streams the readings over OSC, displays them in a [Processing](https://processing.org/) (Java) sketch, and can save daily
 tab-separated log files. 
 
@@ -19,6 +19,10 @@ Known supported USB IDs:
 ---
 
 ## What Is Included
+
+This project includes a Terminal-based Python program which accesses, logs, and transmits (over OSC) the sensor data. The project also includes a Processing (Java) program which receives and displays the real-time OSC data from the Python program, shown at right in the screenshot below.
+
+![python_cli_and_processing_screenshot](images/python_cli_and_processing_screenshot.png)
 
 ```text
 temp_er1_python/temper_cli.py
